@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto+Mono&family=Roboto+Slab:wght@300&family=Roboto:wght@300&family=Rubik&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 6fr;
+}
+
+aside {
+    display: grid;
+    height: 100%;
+    gap: 30px;
+    border-right: 1px solid grey;
+}
+
+aside .sidebar {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 0.5fr 2fr 2fr;
+}
+
+aside .row-one {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #0A2472;
+}
+
+aside .row-buttons {
+    display: grid;
+    gap: 25px;
+}
+
+aside .row-buttons .row-two,
+aside .row-buttons .row-three,
+aside .row-buttons .row-four {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+aside .row-buttons .row-two button,
+aside .row-buttons .row-three button,
+aside .row-buttons .row-four button {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    height: 32px;
+    width: 200px;
+    padding: 0 15px;
+    transition: all .3s;
+}
+
+aside .row-buttons .row-two button:hover,
+aside .row-buttons .row-three button:hover,
+aside .row-buttons .row-four button:hover {
+    border-color: #06f;
+    color: #06f;
+}
+
+aside .row-buttons .row-two button:active,
+aside .row-buttons .row-three button:active,
+aside .row-buttons .row-four button:active {
+    transform: scale(0.9);
+}
+
+.header-and-main {
+    background-color: #e6e6e6;
+    height: 100%;
+}
+
