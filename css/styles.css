@@ -24,7 +24,7 @@ aside {
     display: grid;
     height: 100%;
     gap: 30px;
-    border-right: 1px solid grey;
+    border-right: 2px solid grey;
 }
 
 aside .sidebar {
@@ -38,7 +38,11 @@ aside .row-one {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    color: #0A2472;
+}
+
+a {
+    text-decoration: none;
+    color: #1C05B3;
 }
 
 aside .row-buttons {
@@ -59,7 +63,7 @@ aside .row-buttons .row-two button,
 aside .row-buttons .row-three button,
 aside .row-buttons .row-four button {
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid darkgray;
     border-radius: 5px;
     color: #000;
     cursor: pointer;
@@ -74,6 +78,7 @@ aside .row-buttons .row-three button:hover,
 aside .row-buttons .row-four button:hover {
     border-color: #06f;
     color: #06f;
+    transform: scale(1.05);
 }
 
 aside .row-buttons .row-two button:active,
@@ -83,7 +88,25 @@ aside .row-buttons .row-four button:active {
 }
 
 .header-and-main {
-    background-color: #e6e6e6;
     height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 8fr;
 }
+
+.header-and-main header {
+    position: relative;
+    z-index: 0;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header-and-main main {
+    background-color: #ECECEC;
+}
+
+.header-and-main header {
+    display: grid;
+    padding: 20px 40px;
+    grid-template-rows: 1fr 2fr;
+}
+
 
