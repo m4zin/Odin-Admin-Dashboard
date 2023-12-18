@@ -189,6 +189,7 @@ aside .row-buttons .row-four button:active {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
 }
 
 .header-and-main header .header-row-two .new-upload-share button {
@@ -216,7 +217,125 @@ aside .row-buttons .row-four button:active {
 
 .header-and-main main {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 40px 20px;
+    gap: 25px;
 }
+
+.header-and-main main .posts-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-and-main main .posts-column .posts {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: (auto-fill, 1fr);
+    gap: 20px;
+}
+
+.header-and-main main .posts-column .posts .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #FFFFFF;
+    /* color on the side of box */
+    background:                     
+    linear-gradient(#1C05B3 0 0) left/10px   100% no-repeat,
+    #f2f2f2;
+}
+
+.header-and-main main .posts-column .posts .post .post-buttons {
+    display: flex;
+    align-self: self-end;
+    gap: 20px;
+}
+
+.header-and-main main .posts-column .posts .post .post-buttons img {
+    height: 22.5px;
+    width: 22.5px;
+}
+
+.header-and-main main .announcements-trending-column {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.header-and-main main .announcements-trending-column .announcements,
+.header-and-main main .announcements-trending-column .trending {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-and-main main .announcements-trending-column .announcements .announcements-box,
+.header-and-main main .announcements-trending-column .trending .trending-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #FFFFFF;
+    background: #f2f2f2;
+}
+
+.header-and-main main .announcements-trending-column .announcements .announcements-box div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.header-and-main main .announcements-trending-column .announcements .announcements-box div p {
+    font-size: 14px;
+    color: grey;
+}
+
+.header-and-main main .announcements-trending-column .announcements .announcements-box div:last-child {
+    flex: 1;
+    border-bottom: none;
+}
+
+.header-and-main main .trending,
+.header-and-main main .trending .trending-box,
+.header-and-main main .trending .trending-box div,
+.header-and-main main .trending .trending-box div div {
+    display: flex;
+}
+
+.header-and-main main .trending .trending-box,
+.header-and-main main .trending .trending-box div div {
+    justify-content: center;
+}
+
+.header-and-main main .trending .trending-box div {
+    gap: 10px;
+}
+
+.header-and-main main .trending .trending-box div div {
+    flex-direction: column;
+}
+
+.header-and-main main .trending .trending-box div div p:last-child {
+    color: grey;
+}
+
+.header-and-main main .trending .trending-box div img {
+    height: 65px;
+    width: 65px;
+}
+
 
